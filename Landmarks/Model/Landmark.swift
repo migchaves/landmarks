@@ -16,16 +16,13 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
-    
-    // Image
+    var isFavorite: Bool
     
     private var imageName: String
     
     var image: Image {
         Image(imageName)
     }
-    
-    // Coordinates
     
     private var coordinates: Coordinates
     
